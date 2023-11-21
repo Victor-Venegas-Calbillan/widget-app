@@ -30,7 +30,7 @@ final appRouter = GoRouter(
       builder: (context, state) => const InfiniteScrollScreen(),
     ),
     GoRoute(
-      path: '/progress',
+      path: ProgressScreen.name,
       builder: (context, state) => const ProgressScreen(),
     ),
     GoRoute(
