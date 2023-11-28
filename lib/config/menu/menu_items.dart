@@ -16,6 +16,12 @@ class MenuItem {
 
 const appMenuitems = <MenuItem>[
   MenuItem(
+    title: 'Contador',
+    subTitle: 'Contador con reiverpod',
+    link: '/counter',
+    icon: Icons.add_outlined,
+  ),
+  MenuItem(
     title: 'Botones',
     subTitle: 'Varios botones en flutter' ,
     link: '/buttons',
