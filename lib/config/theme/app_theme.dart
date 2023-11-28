@@ -12,12 +12,11 @@ const colorList = <Color>[
   Colors.deepPurple,
 ];
 
-class AppThemme {
-
+class AppTheme {
   final int selecetedColor;
   final bool isDarkMode;
 
-  AppThemme({
+  AppTheme({
     this.isDarkMode = false,
     this.selecetedColor = 0
   }): assert( selecetedColor >= 0, 'selecetedColor must be greater than 0'),
@@ -31,5 +30,12 @@ class AppThemme {
       centerTitle: false,
     )
   );
-  
+
+  AppTheme copyWith({
+    int? selecetedColor,
+    bool? isDarkMode
+  }) => AppTheme(
+    selecetedColor: selecetedColor ?? this.selecetedColor,
+    isDarkMode: isDarkMode ?? this.isDarkMode
+  );
 }
